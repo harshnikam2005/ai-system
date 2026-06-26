@@ -1,0 +1,22 @@
+Dataset shape: (120, 4)
+Label distribution:
+sentiment
+positive    60
+negative    60
+Name: count, dtype: int64
+
+Training size: 90
+Testing size: 30
+Test Accuracy: 100.00%
+ROC-AUC Score: 1.0000
+
+Classification Report:
+              precision    recall  f1-score   support
+
+    Negative       1.00      1.00      1.00        15
+    Positive       1.00      1.00      1.00        15
+
+    accuracy                           1.00        30
+   macro avg       1.00      1.00      1.00        30
+weighted avg       1.00      1.00      1.00        30
+

@@ -1,0 +1,62 @@
+Dataset shape: (150, 5)
+Species: ['setosa' 'versicolor' 'virginica']
+
+First 5 rows:
+   sepal length (cm)  sepal width (cm)  ...  petal width (cm)  species
+0                5.1               3.5  ...               0.2   setosa
+1                4.9               3.0  ...               0.2   setosa
+2                4.7               3.2  ...               0.2   setosa
+3                4.6               3.1  ...               0.2   setosa
+4                5.0               3.6  ...               0.2   setosa
+
+[5 rows x 5 columns]
+
+Training samples: 120
+Testing samples: 30
+
+Random Forest Accuracy: 93.33 %
+
+Decision Tree CV Accuracy:
+Each fold: [0.967 0.967 0.933 1.    1.   ]
+Mean: 0.973 | Std: 0.025
+
+Random Forest CV Accuracy:
+Each fold: [0.967 0.967 0.933 0.967 1.   ]
+Mean: 0.967 | Std: 0.021
+
+Saved: images/feature_importance.png
+
+Model Comparison using 5-Fold Cross-Validation:
+Decision Tree (depth=3): 0.973 +/- 0.025
+Random Forest (100 trees): 0.967 +/- 0.021
+Gradient Boosting: 0.960 +/- 0.033
+K-Nearest Neighbors: 0.973 +/- 0.025
+Logistic Regression: 0.973 +/- 0.025
+Saved: images/model_comparison.png
+
+Best Parameters: {'max_depth': 3, 'min_samples_split': 2, 'n_estimators': 50}
+Best CV Accuracy: 0.9583
+Final Test Accuracy with best model: 96.67%
+
+============================================================
+FINAL MODEL EVALUATION REPORT
+Soft Nexis Technology - ML Internship
+============================================================
+Student Name : Manish Pawar
+Algorithm    : Random Forest (Tuned)
+Test Accuracy: 96.67%
+
+Classification Report:
+              precision    recall  f1-score   support
+
+      setosa       1.00      1.00      1.00        10
+  versicolor       1.00      0.90      0.95        10
+   virginica       0.91      1.00      0.95        10
+
+    accuracy                           0.97        30
+   macro avg       0.97      0.97      0.97        30
+weighted avg       0.97      0.97      0.97        30
+
+Saved: images/final_confusion_matrix.png
+
+STDERR:

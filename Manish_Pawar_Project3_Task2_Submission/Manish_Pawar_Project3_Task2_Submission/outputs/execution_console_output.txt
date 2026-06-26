@@ -1,0 +1,67 @@
+Dataset shape: (120, 4)
+Label distribution:
+sentiment
+positive    60
+negative    60
+Name: count, dtype: int64
+
+Sample cleaned reviews:
+                                              review  ... sentiment
+0  This movie was absolutely fantastic with brill...  ...  positive
+1  Loved every minute of it, the director did an ...  ...  positive
+2  Excellent film with heartwarming scenes, stron...  ...  positive
+3  A true masterpiece, emotional, inspiring, and ...  ...  positive
+4  The visuals were stunning and the story was ca...  ...  positive
+
+[5 rows x 3 columns]
+
+Sentiment model trained successfully!
+Training size: 90
+Testing size: 30
+Test Accuracy: 100.00%
+ROC-AUC Score: 1.0000
+
+Classification Report:
+               precision    recall  f1-score   support
+
+    Negative       1.00      1.00      1.00        15
+    Positive       1.00      1.00      1.00        15
+
+    accuracy                           1.00        30
+   macro avg       1.00      1.00      1.00        30
+weighted avg       1.00      1.00      1.00        30
+
+
+Cross-validation classifier comparison:
+Logistic Regression: mean=1.000, std=0.000
+Naive Bayes: mean=1.000, std=0.000
+Random Forest: mean=1.000, std=0.000
+Review: This film was absolutely incredible. The acting blew me away!
+Prediction: POSITIVE
+Confidence: 57.6% | Positive: 57.6% | Negative: 42.4%
+------------------------------------------------------------
+
+Review: Complete disaster. Worst screenplay I have ever encountered.
+Prediction: NEGATIVE
+Confidence: 63.5% | Positive: 36.5% | Negative: 63.5%
+------------------------------------------------------------
+
+Review: Not bad, some good moments but overall quite mediocre.
+Prediction: NEGATIVE
+Confidence: 61.0% | Positive: 39.0% | Negative: 61.0%
+------------------------------------------------------------
+
+Review: The visual effects were stunning and the story was captivating.
+Prediction: POSITIVE
+Confidence: 65.9% | Positive: 65.9% | Negative: 34.1%
+------------------------------------------------------------
+
+Review: I cannot believe how boring this was. Totally disappointed.
+Prediction: NEGATIVE
+Confidence: 65.6% | Positive: 34.4% | Negative: 65.6%
+------------------------------------------------------------
+
+Model saved to /mnt/data/Manish_Pawar_Project3_Task2_Submission/model/sentiment_model.pkl
+Model file size: 13.1 KB
+
+STDERR:

@@ -1,0 +1,9 @@
+Text preprocessing is the first and most important step in any Natural Language Processing project. Raw movie reviews contain punctuation, capital letters, numbers, website links, and many common words that do not help the model understand sentiment. In this task, the review text was cleaned and converted into a useful numerical format for machine learning.
+
+First, regular expressions were used to remove HTML tags, URLs, punctuation, numbers, and extra spaces. The complete text was converted into lowercase so that words like Amazing and amazing are treated as the same word. After cleaning, tokenisation was applied. Tokenisation splits a sentence into individual words called tokens. For example, the sentence “the movie was amazing best film” becomes separate words such as movie, amazing, best, and film.
+
+Next, stopwords were removed. Stopwords are common words like the, was, is, and a. These words appear very frequently but usually do not carry strong meaning for sentiment analysis. Removing them reduces noise and makes the important words clearer. Lemmatization was also used to bring words closer to their base form. This helps the system treat similar words as one concept.
+
+Finally, TF-IDF vectorisation was applied. Machine learning algorithms cannot directly understand text, so TF-IDF converts each cleaned review into numbers. It gives higher value to words that are important in one review but not common in all reviews. This creates a sparse matrix where rows represent reviews and columns represent important words or phrases. Word frequency analysis also showed the most common positive and negative words, helping us understand the dataset before model training.
+
+This task successfully prepared clean text features that can be used in Task 2 for building a sentiment classification model.

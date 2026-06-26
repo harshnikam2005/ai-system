@@ -1,0 +1,20 @@
+Review: This film was absolutely incredible. The acting blew me away!
+Prediction: POSITIVE
+Confidence: 57.6% | Positive: 57.6% | Negative: 42.4%
+------------------------------------------------------------
+Review: Complete disaster. Worst screenplay I have ever encountered.
+Prediction: NEGATIVE
+Confidence: 63.5% | Positive: 36.5% | Negative: 63.5%
+------------------------------------------------------------
+Review: Not bad, some good moments but overall quite mediocre.
+Prediction: NEGATIVE
+Confidence: 61.0% | Positive: 39.0% | Negative: 61.0%
+------------------------------------------------------------
+Review: The visual effects were stunning and the story was captivating.
+Prediction: POSITIVE
+Confidence: 65.9% | Positive: 65.9% | Negative: 34.1%
+------------------------------------------------------------
+Review: I cannot believe how boring this was. Totally disappointed.
+Prediction: NEGATIVE
+Confidence: 65.6% | Positive: 34.4% | Negative: 65.6%
+------------------------------------------------------------

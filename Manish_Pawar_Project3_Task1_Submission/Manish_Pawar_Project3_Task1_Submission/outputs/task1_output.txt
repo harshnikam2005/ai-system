@@ -1,0 +1,37 @@
+TASK 1 OUTPUT - TEXT PREPROCESSING AND TF-IDF
+============================================================
+Dataset shape: (16, 3)
+
+Original sample: The movie was AMAZING!!! Best film of 2024. Visit www.movies.com
+Cleaned sample : the movie was amazing best film of visit
+Tokens         : ['the', 'movie', 'was', 'amazing', 'best', 'film', 'of', 'visit']
+Without stopwords: ['amazing', 'best', 'visit']
+
+Stemming and Lemmatization Example:
+running      stem=runn       lemma=run       
+happily      stem=happi      lemma=happily   
+better       stem=better     lemma=good      
+studies      stem=study      lemma=study     
+caring       stem=car        lemma=care      
+wolves       stem=wolve      lemma=wolf      
+
+Original vs Cleaned Reviews:
+1. Original: This movie was absolutely fantastic! Best film of the year.
+   Cleaned : absolutely fantastic best year
+2. Original: Terrible acting and boring plot. Complete waste of time!
+   Cleaned : terrible acting bore plot complete waste time
+3. Original: Loved every minute of it. The director did an amazing job.
+   Cleaned : love every minute director amaze job
+4. Original: Awful storyline. I fell asleep halfway through.
+   Cleaned : awful storyline fell asleep halfway through
+5. Original: Brilliant performances! The cinematography was breathtaking.
+   Cleaned : brilliant performance cinematography breathtaking
+6. Original: Worst movie I have ever seen. Do not waste your money.
+   Cleaned : worst ever seen waste money
+
+Shape of TF-IDF matrix: (16, 145)
+Vocabulary size: 145
+Sample feature names: absolutely, absolutely fantastic, acting, acting bore, acting inspiring, actor, actor charming, amaze, amaze job, asleep, asleep halfway, awful, awful storyline, bad, badly, badly edited, beautiful, beautiful message, beautifully, beautifully crafted
+
+Top positive words: [('absolutely', 1), ('fantastic', 1), ('best', 1), ('year', 1), ('love', 1), ('every', 1), ('minute', 1), ('director', 1), ('amaze', 1), ('job', 1), ('brilliant', 1), ('performance', 1)]
+Top negative words: [('bore', 2), ('plot', 2), ('waste', 2), ('terrible', 1), ('acting', 1), ('complete', 1), ('time', 1), ('awful', 1), ('storyline', 1), ('fell', 1), ('asleep', 1), ('halfway', 1)]
